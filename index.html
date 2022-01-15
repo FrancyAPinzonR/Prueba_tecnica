@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioLogicaLS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assest/css/styleindex.css">
+</head>
+
+
+
+<body class="d-flex flex-column">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assest/src/listalogo.png" width="40" height="40" alt="logo">
+                    Prueba técnica
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Registrarse
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assest/pages/login.html">Iniciar Sesion</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-9 mx-auto">
+                    <div class="card card-signin flex-row my-5">
+                        <div class="card-img-left d-none d-md-flex">
+                            <!-- Background image for card set in CSS! -->
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Registrate</h5>
+                            <form id="formsignup">
+								<div class="form-label-group">
+                                    <input type="text" id="inputName" class="form-control" placeholder="UserName"
+                                        required autofocus>
+                                    <label for="inputName">Nombres</label>
+                                </div>
+								<div class="form-label-group">
+                                    <input type="text" id="inputLastName" class="form-control" placeholder="LastName"
+                                        required autofocus>
+                                    <label for="inputLastName">Apellidos</label>
+                                </div>
+								
+								
+                                <div class="form-label-group">
+									<div class="my-2">
+								<label for="inputUserame">Tipo de documento</label>
+								</div>
+                                   
+									<select class="custom-select">
+									  <option selected>Seleccione su tipo de documento</option>
+									  <option value="1">Cédula de ciudadania</option>
+									  <option value="2">Cédula de extranjeria</option>
+									  <option value="3">Tarjeta de identidad</option>
+									</select>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="number" id="inputID" class="form-control" placeholder="NumeroDocumento"
+                                        required>
+                                    <label for="inputID">Número de documento</label>
+                                </div>
+								<div class="form-label-group">
+                                    <input type="text" id="inputBirthday" class="form-control" placeholder="FechaNacimiento"
+                                        required>
+                                    <label for="inputBirthday">Fecha de nacimiento</label>
+                                </div>
+								<div class="form-label-group">
+                                    <input type="text" id="inputCity" class="form-control" placeholder="Ciudad"
+                                        required>
+                                    <label for="inputCity">Ciudad de nacimiento</label>
+                                </div>
+								<div class="form-label-group">
+                                    <input type="number" id="inputPhone" class="form-control" placeholder="Telefono"
+                                        required>
+                                    <label for="inputPhone">Teléfono</label>
+                                </div>
+								<div class="form-label-group">
+                                    <input type="text" id="inputUser" class="form-control" placeholder="Usuario"
+                                        required>
+                                    <label for="inputUser">Usuario</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" id="inputPassword" class="form-control"
+                                        placeholder="Password" required>
+                                    <label for="inputPassword">Clave</label>
+                                </div>
+
+
+
+                                <button class="btn btn-lg btn-dark btn-block" type="submit"
+                                    id="signUpUser">Registrarse</button>
+                                <a class="d-block text-center mt-2 small text-info" href="./assest/pages/login.html">Ya
+                                    tengo un
+                                    usuario</a>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; Francy Alejandra Pinzon Ramos</small>
+        </div>
+    </footer>
+
+    <script src="./assest/js/signup.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

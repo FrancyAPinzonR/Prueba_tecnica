@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styleprofile.css">
+</head>
+
+<body>
+    <main>
+        <div class="row py-1 px-4">
+            <div class="col-10 mx-auto">
+                <!-- perfil -->
+                <div class="bg-white shadow rounded overflow-hidden">
+                    <div class="px-4 pt-0 pb-4 bg-dark">
+                        <div class="media align-items-end profile-header">
+                            <div class="profile mr-3"><a href="./login.html"
+                                    class="btn btn-dark btn-sm btn-block">Cerrar Sesion</a></div>
+                            <div class="media-body mb-5 text-white">
+                                <h4 class="mb-4" id="nameperson">Nombre persona</h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-light p-4 d-flex justify-content-end text-center">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <h4 class="font-weight-bold mb-0 d-block">Lista de Tareas</h4>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="py-4 px-4">
+                        <div class="d-flex align-items-center justify-content-between mb-0">
+                            <h5 class="mb-0 text-center">Mis Tareas Pendientes</h5>
+                            <small>
+                                <p class="note">
+                                    *Para marcar una tarea como realizada un click, para
+                                    eliminarla haz doble click
+                                </p>
+                            </small>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 my-2 bg-light rounded shadow-sm">
+                                <div class=" row font-italic mb-0">
+                                    <div class="col containerListPendientes">
+                                        <ul id="lista"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 mb-2 text-center">
+                                <div class="containerTitle pb-2">
+                                    <h2>Agregar Nuevas tareas</h2>
+                                </div>
+
+                                <div class="containerInput">
+                                    <p id="inputList" class="input form-control bg-light">
+                                    </p>
+                                    <!-- <input id="inputList" class="input form-control bg-light" /> -->
+
+                                </div>
+                                <div class="bg-light border border-dark rounded shadow ">
+
+                                    <div class=" d-flex pt-3 pb-1 justify-content-around">
+                                        <div class=" mx-4 ">
+                                            <button class="letra btn btn-secondary">1 </button>
+                                            <button class="letra btn btn-secondary">2 </button>
+                                            <button class="letra btn btn-secondary">3 </button>
+                                            <button class="letra btn btn-secondary">4 </button>
+                                            <button class="letra btn btn-secondary">5 </button>
+                                            <button class="letra btn btn-secondary">6 </button>
+                                            <button class="letra btn btn-secondary">7 </button>
+                                            <button class="letra btn btn-secondary">8 </button>
+                                            <button class="letra btn btn-secondary">9 </button>
+                                            <button class="letra btn btn-secondary">0 </button>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-1 justify-content-around">
+                                        <div class=" mx-4 ">
+                                            <button class="letra btn btn-secondary">Q </button>
+                                            <button class="letra btn btn-secondary">W </button>
+                                            <button class="letra btn btn-secondary">E </button>
+                                            <button class="letra btn btn-secondary">R </button>
+                                            <button class="letra btn btn-secondary">T </button>
+                                            <button class="letra btn btn-secondary">Y </button>
+                                            <button class="letra btn btn-secondary">U </button>
+                                            <button class="letra btn btn-secondary">I </button>
+                                            <button class="letra btn btn-secondary">O </button>
+                                            <button class="letra btn btn-secondary">P </button>
+                                        </div>
+                                    </div>
+                                    <div class=" d-flex py-1 justify-content-around">
+                                        <div class=" mx-4">
+                                            <button class="letra btn btn-secondary">A </button>
+                                            <button class="letra btn btn-secondary">S </button>
+                                            <button class="letra btn btn-secondary">D </button>
+                                            <button class="letra btn btn-secondary">F </button>
+                                            <button class="letra btn btn-secondary">G </button>
+                                            <button class="letra btn btn-secondary">H </button>
+                                            <button class="letra btn btn-secondary">J </button>
+                                            <button class="letra btn btn-secondary">K </button>
+                                            <button class="letra btn btn-secondary">L </button>
+                                            <button class="letra btn btn-secondary">Ñ </button>
+                                        </div>
+                                    </div>
+                                    <div class=" d-flex py-1 justify-content-around">
+                                        <div class=" mx-4">
+                                            <button class="letra btn btn-secondary">SPACE </button>
+
+                                            <button class="letra btn btn-secondary">Z</button>
+                                            <button class="letra btn btn-secondary">X </button>
+                                            <button class="letra btn btn-secondary">C </button>
+                                            <button class="letra btn btn-secondary">V </button>
+                                            <button class="letra btn btn-secondary">B </button>
+                                            <button class="letra btn btn-secondary">N </button>
+                                            <button class="letra btn btn-secondary">M </button>
+                                            <button class="letra btn btn-secondary">
+                                                DELETE</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex py-3 justify-content-around">
+                                        <button id="btnList" class="btn btnList btn-secondary">Añadir
+                                            Tarea</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div><!-- fin perfil -->
+
+        </div>
+        </div>
+    </main>
+    <script src="../js/profile.js"></script>
+</body>
+
+</html>
